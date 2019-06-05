@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>BangCuuChuong</title>
+    <style>
+        table{font-size: 20px}
+    </style>
 </head>
 <body>
 <script>
     let board;
     board = "<table border='1' width='900' cellspacing='0' cellpadding='3'>";
-    for(var i = 2;i<=9;i++)
+    for(var i = 1;i<=9;i++)
     {
         board = board + '<tr>';
-        for(var j = 1;j<=9;j++)
+        for(var j = 2;j<=9;j++)
         {
             board = board + '<td>' + i +" x " + j + " = " +i*j +'</td>';
         }
         board = board + '</tr>';
     }
-    board = board + '</table>'
+    board = board + '</table>';
     document.write(board);
 </script>
 </body>
